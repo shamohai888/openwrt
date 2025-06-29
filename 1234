@@ -203,6 +203,13 @@ proxy-groups:
     interval: 300
     filter: "^((?!(直连|拒绝)).)*$"
 
+  - name: 所有-自动
+    type: url-test
+    include-all: true
+    filter: "^((?!(直连|拒绝)).)*$"
+    interval: 30
+    tolerance: 150
+
   # 香港组
 
   - name: 香港-故转
@@ -245,10 +252,12 @@ proxy-groups:
     proxies:
       - 台湾-手选
       - 台湾-智选
+
   - name: 台湾-手选
     type: select
     include-all: true
     filter: "(?=.*(广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan)).*$"
+
   - name: 台湾-智选
     type: smart
     include-all: true
@@ -259,6 +268,13 @@ proxy-groups:
     interval: 300
     filter: "(?=.*(广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan)).*$"
 
+  - name: 台湾-自动
+    type: url-test
+    include-all: true
+    filter: "(?=.*(广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan)).*$"
+    interval: 30
+    tolerance: 150
+
   # 日本组
 
   - name: 日本-故转
@@ -268,10 +284,12 @@ proxy-groups:
     proxies:
       - 日本-手选
       - 日本-智选
+
   - name: 日本-手选
     type: select
     include-all: true
     filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$"
+
   - name: 日本-智选
     type: smart
     include-all: true
@@ -282,6 +300,13 @@ proxy-groups:
     interval: 300
     filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$"
 
+  - name: 日本-自动
+    type: url-test
+    include-all: true
+    filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$"
+    interval: 30
+    tolerance: 150
+
   # 新加坡组
 
   - name: 新加坡-故转
@@ -291,10 +316,12 @@ proxy-groups:
     proxies:
       - 新加坡-手选
       - 新加坡-智选
+
   - name: 新加坡-手选
     type: select
     include-all: true
     filter: "(?=.*(广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)).*$"
+
   - name: 新加坡-智选
     type: smart
     include-all: true
@@ -305,6 +332,13 @@ proxy-groups:
     interval: 300
     filter: "(?=.*(广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)).*$"
 
+  - name: 新加坡-自动
+    type: url-test
+    include-all: true
+    filter: "(?=.*(广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)).*$"
+    interval: 30
+    tolerance: 150
+
   # 美国组
 
   - name: 美国-故转
@@ -314,10 +348,12 @@ proxy-groups:
     proxies:
       - 美国-手选
       - 美国-智选
+
   - name: 美国-手选
     type: select
     include-all: true
     filter: "(?=.*(广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$"
+
   - name: 美国-智选
     type: smart
     include-all: true
@@ -328,6 +364,12 @@ proxy-groups:
     interval: 300
     filter: "(?=.*(广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$"
 
+  - name: 美国-自动
+    type: url-test
+    include-all: true
+    filter: "(?=.*(广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$"
+    interval: 30
+    tolerance: 150
 
   # 其他组
   
@@ -338,6 +380,7 @@ proxy-groups:
     proxies:
       - 其他-手选
       - 其他-智选
+
   - name: 其他-手选
     type: select
     include-all: true
@@ -352,6 +395,13 @@ proxy-groups:
     strategy: sticky-sessions
     interval: 300
     filter: "^((?!(直连|拒绝|广港|香港|HK|Hong Kong|🇭🇰|HongKong|广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore|广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).)*$"
+
+  - name: 其他-自动
+    type: url-test
+    include-all: true
+    filter: "^((?!(直连|拒绝|广港|香港|HK|Hong Kong|🇭🇰|HongKong|广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore|广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).)*$"
+    interval: 30
+    tolerance: 150
 
 # ========================
 # 规则引擎（rules）
