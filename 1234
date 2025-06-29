@@ -129,13 +129,25 @@ default: &default
     - 直连
     - 所有-智选
     - 所有-手选
+    - 所有-自动
     - 香港-智选
     - 香港-故转
+    - 香港-自动
+    - 台湾-智选
     - 台湾-故转
+    - 台湾-自动
+    - 日本-智选
     - 日本-故转
+    - 日本-自动
+    - 新加坡-智选
     - 新加坡-故转
+    - 新加坡-自动
+    - 美国-智选
     - 美国-故转
+    - 美国-自动
+    - 其他-智选
     - 其他-故转
+    - 其他-自动
     - 拒绝
 
 proxy-groups:
@@ -215,7 +227,14 @@ proxy-groups:
     strategy: sticky-sessions
     interval: 300
     filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$"
- 
+
+  - name: 香港-自动
+    type: url-test
+    interval: 30
+    tolerance: 150
+    filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$"
+
+
   # 台湾组
 
   - name: 台湾-故转
