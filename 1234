@@ -230,9 +230,10 @@ proxy-groups:
 
   - name: 香港-自动
     type: url-test
+    include-all: true
+    filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$"
     interval: 30
     tolerance: 150
-    filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$"
 
 
   # 台湾组
