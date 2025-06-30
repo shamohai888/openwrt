@@ -187,6 +187,7 @@ proxy-groups:
   - {name: 其他, <<: *default}
   - {name: 直连IP, <<: *default}
   - {name: 代理IP, <<: *default}
+  
   # 所有组
 
   - name: 所有-手选
