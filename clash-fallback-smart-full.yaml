@@ -37,7 +37,7 @@ log-level: info
 external-controller: 0.0.0.0:9090
 # external-ui: ui
 # external-ui-name: zashboard
-# external-ui-url: https://github.moeyy.xyz/https://GitHub.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip
+# external-ui-url: https://gh.mozhu.uk/https://GitHub.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip
 secret: "123456"
 
 # ========================
