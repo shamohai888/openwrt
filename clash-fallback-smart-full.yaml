@@ -185,8 +185,8 @@ proxy-groups:
   - {name: 国外, <<: *default}
   - {name: 国内, <<: *default}
   - {name: 其他, <<: *default}
-  - {name: 直连IP, <<: *default}
-  - {name: 代理IP, <<: *default}
+  - {name: 直连LAN, <<: *default}
+  - {name: 代理LAN, <<: *default}
   
   # 所有组
 
@@ -410,8 +410,8 @@ proxy-groups:
 # ========================
 rules:
 
-  - RULE-SET,CNIP / IP,直连IP
-  - RULE-SET,USAIP / IP,代理IP
+  - RULE-SET,CNIP / IP,直连LAN
+  - RULE-SET,USAIP / IP,代理LAN
   - RULE-SET,TEST / Domain,Test
   - RULE-SET,Block / Domain,Block  
   - RULE-SET,ChatGPT / Domain,ChatGPT
@@ -470,8 +470,8 @@ rule-anchor:
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
   
 rule-providers:
-  CNIP / IP: {<<: *ip, url: "https://gh.mozhu.uk/https://github.com/shamohai888/openwrt/edit/main/lanip.list"}
-  USAIP / IP: {<<: *ip, url: "https://gh.mozhu.uk/https://github.com/shamohai888/openwrt/edit/main/usaip.list"}
+  CNIP / IP: {<<: *ip, url: "https://gh.mozhu.uk/https://github.com/shamohai888/openwrt/edit/main/zllan.list"}
+  USAIP / IP: {<<: *ip, url: "https://gh.mozhu.uk/https://github.com/shamohai888/openwrt/edit/main/dllan.list"}
   TEST / Domain: {<<: *class, url: "https://gh.mozhu.uk/http://raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Check.list"}
   ChatGPT / Domain: {<<: *domain, url: "https://gh.mozhu.uk/http://github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/openai.mrs"}
   Claude / Domain: {<<: *class, url: "https://gh.mozhu.uk/http://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.list"}
