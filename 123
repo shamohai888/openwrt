@@ -7,7 +7,7 @@
 proxy-providers:
 
   机场聚合:
-    url: "https://sub.gpt-agent.cc/s/832fa46b499581c8a051ba6b70f9163e"
+    url: "https://sub.gpt-agent.cc/s/832fa46b3e"
     type: http
     interval: 86400
     health-check:
