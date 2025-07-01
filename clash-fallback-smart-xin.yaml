@@ -1,4 +1,22 @@
 # ========================
+# Clash-ALL 优化配置
+# ========================
+
+# 机场节点订阅
+
+proxy-providers:
+
+  机场聚合:
+    url: "http://192.168.16.8:3008/T3B9dgzBzdRbBF8Aqx7P/download/collection/nin1?target=ClashMeta"
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    proxy: 直连 
+
+# ========================
 # 主要端口设置
 # ========================
 port: 7890
