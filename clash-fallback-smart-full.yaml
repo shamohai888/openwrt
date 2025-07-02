@@ -204,7 +204,7 @@ proxy-groups:
     type: url-test
     include-all: true
     filter: "^((?!(直连|拒绝)).)*$"
-    interval: 30
+    interval: 3600
     tolerance: 150
 
   # 香港组
