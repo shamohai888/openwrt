@@ -5,10 +5,10 @@ services:
     restart: always
     container_name: typecho-db
     environment:
-      MYSQL_ROOT_PASSWORD: yourpassword
+      MYSQL_ROOT_PASSWORD: mysql_yiJFa5
       MYSQL_DATABASE: typecho
-      MYSQL_USER: typecho
-      MYSQL_PASSWORD: typecho123
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: MQjhiFaTHEhc748s
     volumes:
       - ./db_data:/var/lib/mysql
     networks:
