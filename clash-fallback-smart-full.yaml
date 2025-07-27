@@ -196,6 +196,11 @@ proxy-groups:
     policy-priority: ".*SSRDOG.*:1.5;.*NutBit.*:1.2;.*(香港|HK).*:1.1;.*牛逼.*:0.8"
     uselightgbm: true
     collectdata: true
+    health-check: 
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+      tolerance: 2
     strategy: sticky-sessions
     interval: 300
     filter: "^((?!(直连|拒绝)).)*$"
@@ -204,7 +209,7 @@ proxy-groups:
     type: url-test
     include-all: true
     filter: "^((?!(直连|拒绝)).)*$"
-    interval: 3600
+    interval: 300
     tolerance: 150
 
   # 香港组
@@ -228,15 +233,20 @@ proxy-groups:
     policy-priority: ".*SSRDOG.*:1.5;.*NutBit.*:1.2;.*(香港|HK).*:1.1;.*牛逼.*:0.8"
     uselightgbm: true
     collectdata: true
+    health-check: 
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 60
+      tolerance: 1
     strategy: sticky-sessions
-    interval: 300
+    interval: 180
     filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$"
 
   - name: 香港-自动
     type: url-test
     include-all: true
     filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$"
-    interval: 30
+    interval: 60
     tolerance: 150
 
 
@@ -261,15 +271,20 @@ proxy-groups:
     policy-priority: ".*SSRDOG.*:1.5;.*NutBit.*:1.2;.*(香港|HK).*:1.1;.*牛逼.*:0.8"
     uselightgbm: true
     collectdata: true
+    health-check: 
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 60
+      tolerance: 1
     strategy: sticky-sessions
-    interval: 300
+    interval: 180
     filter: "(?=.*(广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan)).*$"
 
   - name: 台湾-自动
     type: url-test
     include-all: true
     filter: "(?=.*(广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan)).*$"
-    interval: 30
+    interval: 60
     tolerance: 150
 
   # 日本组
@@ -293,15 +308,20 @@ proxy-groups:
     policy-priority: ".*SSRDOG.*:1.5;.*NutBit.*:1.2;.*(香港|HK).*:1.1;.*牛逼.*:0.8"
     uselightgbm: true
     collectdata: true
+    health-check: 
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 60
+      tolerance: 1
     strategy: sticky-sessions
-    interval: 300
+    interval: 180
     filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$"
 
   - name: 日本-自动
     type: url-test
     include-all: true
     filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$"
-    interval: 30
+    interval: 60
     tolerance: 150
 
   # 新加坡组
@@ -325,15 +345,20 @@ proxy-groups:
     policy-priority: ".*SSRDOG.*:1.5;.*NutBit.*:1.2;.*(香港|HK).*:1.1;.*牛逼.*:0.8"
     uselightgbm: true
     collectdata: true
+    health-check: 
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 60
+      tolerance: 1
     strategy: sticky-sessions
-    interval: 300
+    interval: 180
     filter: "(?=.*(广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)).*$"
 
   - name: 新加坡-自动
     type: url-test
     include-all: true
     filter: "(?=.*(广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)).*$"
-    interval: 30
+    interval: 60
     tolerance: 150
 
   # 美国组
@@ -357,15 +382,20 @@ proxy-groups:
     policy-priority: ".*SSRDOG.*:1.5;.*NutBit.*:1.2;.*(香港|HK).*:1.1;.*牛逼.*:0.8"
     uselightgbm: true
     collectdata: true
+    health-check: 
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 60
+      tolerance: 1
     strategy: sticky-sessions
-    interval: 300
+    interval: 180
     filter: "(?=.*(广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$"
 
   - name: 美国-自动
     type: url-test
     include-all: true
     filter: "(?=.*(广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$"
-    interval: 30
+    interval: 60
     tolerance: 150
 
   # 其他组
@@ -389,15 +419,20 @@ proxy-groups:
     policy-priority: ".*SSRDOG.*:1.5;.*NutBit.*:1.2;.*(香港|HK).*:1.1;.*牛逼.*:0.8"
     uselightgbm: true
     collectdata: true
+    health-check: 
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 60
+      tolerance: 1
     strategy: sticky-sessions
-    interval: 300
+    interval: 180
     filter: "^((?!(直连|拒绝|广港|香港|HK|Hong Kong|🇭🇰|HongKong|广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore|广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).)*$"
 
   - name: 其他-自动
     type: url-test
     include-all: true
     filter: "^((?!(直连|拒绝|广港|香港|HK|Hong Kong|🇭🇰|HongKong|广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore|广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).)*$"
-    interval: 30
+    interval: 60
     tolerance: 150
 
 # ========================
