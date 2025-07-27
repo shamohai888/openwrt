@@ -230,7 +230,7 @@ proxy-groups:
   - name: 香港-智选
     type: smart
     include-all: true
-    policy-priority: ".*SSRDOG.*:1.5;.*NutBit.*:1.2;.*(香港|HK).*:1.1;.*牛逼.*:0.8"
+    policy-priority: ".*SSRDOG.*:1.5;.*NutBit.*:1.2;.*牛逼.*:0.8"
     uselightgbm: true
     collectdata: true
     health-check: 
@@ -268,7 +268,7 @@ proxy-groups:
   - name: 台湾-智选
     type: smart
     include-all: true
-    policy-priority: ".*SSRDOG.*:1.5;.*NutBit.*:1.2;.*(香港|HK).*:1.1;.*牛逼.*:0.8"
+    policy-priority: ".*SSRDOG.*:1.5;.*NutBit.*:1.2;.*牛逼.*:0.8"
     uselightgbm: true
     collectdata: true
     health-check: 
@@ -305,7 +305,7 @@ proxy-groups:
   - name: 日本-智选
     type: smart
     include-all: true
-    policy-priority: ".*SSRDOG.*:1.5;.*NutBit.*:1.2;.*(香港|HK).*:1.1;.*牛逼.*:0.8"
+    policy-priority: ".*SSRDOG.*:1.5;.*NutBit.*:1.2;.*牛逼.*:0.8"
     uselightgbm: true
     collectdata: true
     health-check: 
@@ -342,7 +342,7 @@ proxy-groups:
   - name: 新加坡-智选
     type: smart
     include-all: true
-    policy-priority: ".*SSRDOG.*:1.5;.*NutBit.*:1.2;.*(香港|HK).*:1.1;.*牛逼.*:0.8"
+    policy-priority: ".*SSRDOG.*:1.5;.*NutBit.*:1.2;.*牛逼.*:0.8"
     uselightgbm: true
     collectdata: true
     health-check: 
@@ -379,7 +379,7 @@ proxy-groups:
   - name: 美国-智选
     type: smart
     include-all: true
-    policy-priority: ".*SSRDOG.*:1.5;.*NutBit.*:1.2;.*(香港|HK).*:1.1;.*牛逼.*:0.8"
+    policy-priority: ".*SSRDOG.*:1.5;.*NutBit.*:1.2;.*牛逼.*:0.8"
     uselightgbm: true
     collectdata: true
     health-check: 
@@ -416,7 +416,7 @@ proxy-groups:
   - name: 其他-智选
     type: smart
     include-all: true
-    policy-priority: ".*SSRDOG.*:1.5;.*NutBit.*:1.2;.*(香港|HK).*:1.1;.*牛逼.*:0.8"
+    policy-priority: ".*SSRDOG.*:1.5;.*NutBit.*:1.2;.*牛逼.*:0.8"
     uselightgbm: true
     collectdata: true
     health-check: 
