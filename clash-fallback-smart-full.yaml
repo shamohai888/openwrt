@@ -7,7 +7,7 @@
 proxy-providers:
 
   机场聚合:
-    url: "https://mozhuzhuzisub.zhuzicn.com/T3B9dghBzdubBF8Aqx7P/download/collection/JHJC?target=ClashMeta"
+    url: "https://mozhAqx7P/download/collection/JHJC?target=ClashMeta"
     type: http
     interval: 86400
     health-check:
