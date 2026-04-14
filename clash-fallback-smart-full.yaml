@@ -1,5 +1,5 @@
 # ========================
-# Clash-FLL 优化配置
+# Clash-FULL 优化配置
 # ========================
 
 # 机场节点订阅
@@ -7,7 +7,7 @@
 proxy-providers:
 
   机场聚合:
-    url: "http://192.168.16.8:3008/T3B9dgzBzdRbBF8Aqx7P/download/collection/JHJC?target=ClashMeta"
+    url: "https://mozhuzhuzisub.zhuzicn.com/T3B9dghBzdubBF8Aqx7P/download/collection/JHJC?target=ClashMeta"
     type: http
     interval: 86400
     health-check:
