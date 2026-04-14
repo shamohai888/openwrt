@@ -182,7 +182,7 @@ proxy-groups:
   - {name: 国外, <<: *default}
   - {name: 国内, <<: *default}
   - {name: 其他, <<: *default}
-  - {name: VPN-161, <<: *default}
+  - {name: 局域网161, <<: *default}
 
   # 所有组
 
@@ -441,7 +441,7 @@ proxy-groups:
 # ========================
 rules:
 
-  - IP-CIDR,192.168.161.0/24,VPN-161
+  - IP-CIDR,192.168.161.0/24,局域网161
   - RULE-SET,Mzhu / Domain,国内
   - RULE-SET,TEST / Domain,Test
   - RULE-SET,Block / Domain,Block  
