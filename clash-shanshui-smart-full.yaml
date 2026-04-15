@@ -7,7 +7,7 @@
 proxy-providers:
 
   机场聚合:
-    url: "https://mozhuzhuzisub.zhuzicn.com/T3B9dghBzdubBF8Aqx7P/download/collection/JHJC?target=ClashMeta"
+    url: "https://mo=ClashMeta"
     type: http
     interval: 86400
     health-check:
@@ -182,8 +182,8 @@ proxy-groups:
   - {name: Block, <<: *default}
   - {name: 国外, <<: *default}
   - {name: 国内, <<: *default}
-  - {name: 其他, <<: *default}
   - {name: 店子回家, <<: *default}
+  - {name: 其他, <<: *default}
 
   # 所有组
 
@@ -449,7 +449,6 @@ proxy-groups:
 # ========================
 rules:
 
-  - IP-CIDR,192.168.16.0/24,店子回家
   - RULE-SET,Mzhu / Domain,国内
   - RULE-SET,TEST / Domain,Test
   - RULE-SET,Block / Domain,Block  
@@ -498,6 +497,7 @@ rules:
   - RULE-SET,China / Domain,国内
   - RULE-SET,China / IP,国内,no-resolve
   - RULE-SET,Private / Domain,国内
+  - IP-CIDR,192.168.16.0/24,店子回家
   - MATCH,其他
 
 # ========================
