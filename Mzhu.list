@@ -1,0 +1,18 @@
+# 直连补充列表(国内域名不解析时，防止走代理使用)
+
+# MyList
+# 域名后缀匹配
+DOMAIN-SUFFIX,mozhu.uk
+DOMAIN-SUFFIX,mozhugl.zhuzicn.com
+DOMAIN-SUFFIX,mozhubj.zhuzicn.com
+DOMAIN-SUFFIX,mozhusq.zhuzicn.com
+DOMAIN-SUFFIX,mozhults.zhuzicn.com
+DOMAIN-SUFFIX,mozhuxc.zhuzicn.com
+DOMAIN-SUFFIX,argotunnel.com
+DOMAIN-SUFFIX,ntp.org
+
+# NutBit
+DOMAIN-SUFFIX,nutbit.net
+
+# SSRDOG
+DOMAIN-SUFFIX,urlapi-dodo.sbs 
