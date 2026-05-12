@@ -1,0 +1,286 @@
+# Managed rule-provider cache sources for AnGe-ClashBoard
+# This file is auto-generated. Only rule-providers are kept here.
+
+rule-providers:
+  Mzhu / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh.mozhu.uk/https://raw.githubusercontent.com/shamohai888/openwrt/refs/heads/main/list/Mzhu.list
+  MzhuDL / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh.mozhu.uk/https://raw.githubusercontent.com/shamohai888/openwrt/refs/heads/main/list/MzhuDL.list
+  TEST / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh.mozhu.uk/http://raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Check.list
+  Block / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Block.list
+  ChatGPT / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/openai.mrs
+  Claude / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Claude.list
+  Meta AI / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/MetaAi.list
+  Perplexity / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/perplexity.mrs
+  Copilot / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Copilot.list
+  Gemini / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Gemini.list
+  Reddit / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/reddit.mrs
+  GitHub / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/github.mrs
+  Telegram / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh.mozhu.uk/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.list
+  Telegram / IP:
+    type: http
+    interval: 0
+    behavior: IPCIDR
+    format: MrsRule
+    url: https://gh.mozhu.uk/http://github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.mrs
+  WhatsApp / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh.mozhu.uk/http://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Whatsapp/Whatsapp.list
+  Facebook / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh.mozhu.uk/http://github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/facebook.mrs
+  Apple / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple.mrs
+  Apple-CN / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple-cn.mrs
+  Microsoft / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/microsoft.mrs
+  OKX / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/okx.mrs
+  Bybit / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/bybit.mrs
+  Binance / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/binance.mrs
+  Youtube / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh.mozhu.uk/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.list
+  TikTok / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/tiktok.mrs
+  Netflix / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/netflix.mrs
+  Netflix / IP:
+    type: http
+    interval: 0
+    behavior: IPCIDR
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/netflix.mrs
+  Disney / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/disney.mrs
+  Amazon / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/amazon.mrs
+  Crunchyroll / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Crunchyroll.list
+  HBO / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/hbo.mrs
+  Spotify / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/spotify.mrs
+  Steam / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam.mrs
+  Epic / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Epic/Epic.list
+  EA / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/EA/EA.list
+  Blizzard / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Blizzard/Blizzard.list
+  UBI / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/UBI/UBI.list
+  PlayStation / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/PlayStation/PlayStation.list
+  Nintend / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nintendo/Nintendo.list
+  Google / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs
+  Google / IP:
+    type: http
+    interval: 0
+    behavior: IPCIDR
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs
+  Nvidia / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Nvidia/Nvidia.list
+  Proxy / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Proxy.list
+  Globe / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.list
+  Direct / Domain:
+    type: http
+    interval: 0
+    behavior: Classical
+    format: TextRule
+    url: https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Direct.list
+  China / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cn.mrs
+  China / IP:
+    type: http
+    interval: 0
+    behavior: IPCIDR
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cn.mrs
+  Private / Domain:
+    type: http
+    interval: 0
+    behavior: Domain
+    format: MrsRule
+    url: https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/private.mrs
